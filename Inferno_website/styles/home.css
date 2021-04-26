@@ -2,10 +2,35 @@ html {
   font-family: "Russo One", sans-serif;
 }
 
-*{
-margin:0;
-padding:0;
-font-family: "Russo One", sans-serif;
+* {
+  font-family: "Russo One", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(images/background.jpg) no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    to right,
+    #ffc31f 0%,
+    #ee741b 50%,
+    #dc2417 100%
+  );
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/GasLeak.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
 }
 
 nav {
@@ -35,6 +60,7 @@ nav > ul > li > a {
   padding: 0.5em 1em;
   text-decoration: none;
   color: #fff;
+  font-family: "Russo One", sans-serif;
 }
 
 .navbar-logo {
@@ -48,145 +74,52 @@ nav > ul > li > a {
   width: 70px;
 }
 
-body{
-margin: 0;
-padding: 0;
-height: 100vh;
-background: url(images/background.jpg)no-repeat;
-background-size:cover;
- background-image: linear-gradient(
-    to right,
-    #ffc31f 0%,
-    #ee741b 50%,
-    #dc2417 100%
-  );
+.row {
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
-.container{
-width:100%;
-height:100vh;
-background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/GasLeak.png);
-background-position:center;
-background-size:cover;
-padding-left: 8%;
-padding-right: 8%;
-box-sizing:border-box;
+.col {
+  flex-basis: 100%;
 }
 
-nav {
-    float: right;
-    overflow: hidden;
-    text-align: center;
-    margin-right: 20px;
-    margin-top: 5px;
+h1 {
+  color: #fff;
+  font-size: 100px;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
+p {
+  color: #fff;
+  font-size: 21px;
+  line-height: 15px;
 }
 
-nav ul li {
-    display: inline-block;
-    font-family: 'Russo One', sans-serif;
-    font-size: .9em;
-    list-style-type: none;
-    border-right: 3px solid black;
+.card:hover {
+  transform: translateY(-13px);
 }
 
-nav > ul > li > a {
-    display: block;
-    line-height: 0.5em;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    color: #000;
+h5 {
+  color: #fff;
+  text-shadow: 0 0 5px #999;
 }
 
-
-.navbar{
-height:12%;
-display:flex;
-align-items:center;
+.card p {
+  text-shadow: 0 0 15px #000;
+  font-size: 18px;
 }
 
-.logo{
-  float: left;
-    position: relative;
-    margin: 10px 10px 15px 10px;
-	height: 120px;
-    width: 120px;
+.firetruck {
+  width: 250px;
+  height: 180px;
+  border-radius: 10px;
+  padding: -20px -30px;
 }
 
-nav{
-flex: 1;
-text-align: right;
+table {
+  margin-left: 3%;
 }
 
-nav ul li{
-list-style:none;
-display: inline-block;
-margin-left: 60px;
-}
-
-nav ul li a{
-text-decoration:none;
-color: #fff;
-font-size: 17px;
-}
-
-.row{
-display: flex;
-height:88%;
-align-items:center;
-}
-
-.col{
-flex-basis:50%
-}
-
-h1{
-color: #fff;
-font-size:100px;
-}
-
-p{
-color:#fff;
-font-size:21px;
-line-height:15px;
-}
-
-
-.card{
-width: 250px;
-height: 180px;
-display: inline-block;
-border-radius: 10px;
-padding: 15px 25px;
-box-sizing:border-box;
-cursor:pointer;
-margin: 10px 15px;
-background-position: center;
-background-size:cover;
-transition: transform 0.5s;
-}
-
-.card:hover{
-transform: translateY(-13px)
-}
-
-h5{
-color: #fff;
-text-shadow: 0 0 5px #999;
-}
-
-.card p{
-text-shadow: 0 0 15px #000;
-font-size: 18px;
-}
-
-.firetruck{
-width: 250px;
-height: 180px;
-border-radius: 10px;
-padding: -20px -30px;
+table td {
+  padding-right: 3%;
 }
