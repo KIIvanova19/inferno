@@ -1,5 +1,5 @@
 html {
-  font-family: "Russo One", sans-serif; 
+  font-family: "Russo One", sans-serif;
 }
 
 /* navigation */
@@ -188,7 +188,6 @@ footer img {
   margin-right: auto;
 }
 
-
 .post {
   width: 92%;
   margin-left: 3%;
@@ -200,7 +199,7 @@ footer img {
   align-items: center;
   border-radius: 0.8rem;
   box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
-}	
+}
 
 .post img {
   min-width: 30rem;
@@ -208,7 +207,7 @@ footer img {
   height: 300px;
   display: flex;
   border-radius: 0.8rem;
-}	
+}
 
 summary {
   font-size: 2.5rem;
@@ -216,14 +215,14 @@ summary {
   margin-left: 3%;
   text-transform: uppercase;
   color: #0a153d;
-}	
+}
 
 p {
   color: #6d9eeb;
   font-size: 1.6rem;
   font-weight: 600;
   float: right;
-}	
+}
 
 details p {
   font-family: Arial;
@@ -236,7 +235,7 @@ h6 {
   font-style: italic;
 }
 
-details>summary {
+details > summary {
   list-style-type: none;
   outline: none;
   cursor: pointer;
@@ -244,18 +243,18 @@ details>summary {
   border-radius: 5px;
 }
 
-details>summary::-webkit-details-marker {
+details > summary::-webkit-details-marker {
   display: none;
 }
 
-details>summary::before {
-  content: '+ ';
+details > summary::before {
+  content: "+ ";
 }
 
-details[open]>summary::before {
-  content: '- ';
+details[open] > summary::before {
+  content: "- ";
 }
 
-details[open]>summary {
+details[open] > summary {
   margin-bottom: 0.5rem;
 }
